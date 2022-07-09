@@ -266,6 +266,7 @@ section {
 }
 
 .hero-modal {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -300,11 +301,56 @@ section {
     fill: solid #000000;
 }
 
+.form {
+    display: inline-block;
+
+}
+
+.form {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    outline: 1px solid #2196f3;
+}
+
+.form-comment,
+.form-mail,
+.form-tel,
+.form-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-form {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196f3;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    font-family: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    color: var(--fontcolor);
+}
 
 /* section-peculiarities */
 .peculiarities .container .list-p {
     display: flex;
     margin: 0 auto;
+
 }
 
 .item-svg {
