@@ -298,6 +298,67 @@ section {
     width: 18px;
     height: 18px;
     fill: solid #000000;
+    z-index: 5;
+}
+
+/* hover focus form */
+.close-icon:hover {
+    fill: #2196F3;
+    transition: fill var(--timing);
+}
+
+.modal-close:focus .close-icon {
+    fill: #2196F3;
+    transition: fill var(--timing);
+}
+
+
+.form-name-input:focus+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+.form-tel-input:focus+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+.form-mail-input:focus+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+/* hover */
+
+.form-name-input:hover+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+.form-tel-input:hover+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+.form-mail-input:hover+.form-svg {
+    fill: var(--accent-color);
+    transition: fill var(--timing);
+}
+
+.contact-form-field:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.form-name-input:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.form-mail-input:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.form-tel-input:hover {
+    border: 1px solid var(--accent-color);
 }
 
 .form {
@@ -307,10 +368,11 @@ section {
     gap: 15px;
 }
 
+
 .form-titel {
-    position: absolute;
-    top: 40px;
-    left: 41px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Roboto;
     font-style: Bold;
     font-size: 20px;
@@ -320,8 +382,24 @@ section {
 }
 
 .input-titel {
+    position: absolute;
+    top: -28px;
+    left: 0%;
     display: inline-block;
-    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #757575;
+}
+
+.input-titel-comment {
+    position: absolute;
+    top: -20px;
+    left: 0%;
+    display: inline-block;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -335,7 +413,7 @@ section {
 
 .form-name {
     position: absolute;
-    top: 93px;
+    top: 75px;
     left: 41px;
 
 }
@@ -360,7 +438,7 @@ section {
 
 .form-checkbox {
     position: absolute;
-    top: 457px;
+    top: 437px;
     left: 41px;
 }
 
@@ -368,6 +446,7 @@ section {
 .form-name-input,
 .form-tel-input,
 .form-mail-input {
+    padding-left: 42px;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -387,53 +466,12 @@ section {
 .contact-form-field,
 .form-name-input,
 .form-tel-input,
-.form-mail-input::placeholder {
+.form-mail-input {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-
-/* button form */
-.btn-form {
-    position: absolute;
-    top: 491px;
-    left: 165px;
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--fontcolor);
-
-
-}
-
-.contact-form-label {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    color: rgba(157, 164, 189, 0.4);
-    transition: transform var(--anim-fast);
 }
 
 /* chekbox */
@@ -453,14 +491,91 @@ section {
     height: 20px;
     outline: 2px solid #9da4bd;
     outline-offset: -2px;
-    border-radius: 8px;
+    border-radius: 2px;
 
-    transition: outline-color 250ms, background-color 250ms;
+    transition: outline-color var(--timing), background-color var(--timing);
 }
 
 .form-checkbox-input:focus+.form-checkbox-custom-checkbox {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background: #2196F3;
+
 }
+
+.form-checkbox-icon {
+    fill: var(--backgroundcolor-header);
+}
+
+
+
+.form-checkbox-agreement {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.form-checkbox-input {
+    position: absolute;
+    -webkit-appearance: none;
+}
+
+.offer-option {
+    text-decoration: underline;
+    color: #2196F3;
+}
+
+
+/* button form */
+.btn-form {
+    position: absolute;
+    top: 505px;
+    left: 165px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--fontcolor);
+
+
+}
+
+.contact-form-label,
+.form-checkbox-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+
+
+.form-name,
+.form-tel,
+.form-mail,
+.form-checkbox {
+    position: relative;
+}
+
+/* form svg position */
+
+.form-svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: var(--fontcolor-secondary);
+}
+
 
 
 /* section-peculiarities */
@@ -1075,4 +1190,73 @@ section .button {
     text-transform: uppercase;
     text-align: end;
     color: #FFFFFF;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+    position: relative;
+
+}
+
+.form-mail-input-footer {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+}
+
+.form-mail-input-footer:hover {
+    border: 1px solid rgba(33, 150, 243, 0);
+    transition: border var(--timing);
+}
+
+.form-mail-input-footer:focus {
+    border: 1px solid rgba(33, 150, 243, 0);
+    transition: border var(--timing);
+}
+
+.btn-footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 29px;
+    top: 20px;
+    right: -60%;
+    transform: translateY(35%);
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.footer-form-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fontcolor);
+}
+
+.form-svg-footer {
+    margin-left: 10px;
+    fill: var(--backgroundcolor-header);
+}
+
+.btn-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
 }
