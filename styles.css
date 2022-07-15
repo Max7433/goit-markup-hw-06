@@ -272,6 +272,7 @@ section {
     transform: translate(-50%, -70%);
     width: 528px;
     height: 581px;
+    padding: 40px;
     background-color: var(--backgroundcolor-header);
     border-radius: 4px;
     opacity: 1;
@@ -365,12 +366,10 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 
 .form-titel {
-    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     font-family: Roboto;
@@ -413,33 +412,58 @@ section {
 
 .form-name {
     position: absolute;
-    top: 75px;
-    left: 41px;
+    top: 65px;
+
 
 }
 
 .form-tel {
     position: absolute;
-    top: 161px;
-    left: 41px;
+    top: 133px;
 }
 
 .form-mail {
     position: absolute;
-    top: 229px;
-    left: 41px;
+    top: 201px;
 }
 
 .form-textarea {
     position: absolute;
-    top: 297px;
-    left: 41px;
+    top: 255px;
 }
 
 .form-checkbox {
     position: absolute;
-    top: 437px;
-    left: 41px;
+    top: 397px;
+}
+
+/* button form */
+.btn-form {
+    position: absolute;
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+    top: 451px;
+    left: 124px;
+    /* gap: 40px; */
+
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--fontcolor);
+
+
 }
 
 /* input style */
@@ -458,6 +482,7 @@ section {
     height: 120px;
     padding-top: 12px;
     padding-left: 16px;
+    resize: none;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -522,31 +547,6 @@ section {
     color: #2196F3;
 }
 
-
-/* button form */
-.btn-form {
-    position: absolute;
-    top: 505px;
-    left: 165px;
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: transparent;
-    border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--fontcolor);
-
-
-}
-
 .contact-form-label,
 .form-checkbox-label {
     position: absolute;
@@ -555,9 +555,6 @@ section {
     transform: translateY(-50%);
 
 }
-
-
-
 
 .form-name,
 .form-tel,
@@ -1208,14 +1205,17 @@ section .button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .form-mail-input-footer:hover {
+    background: #2F303A;
     border: 1px solid rgba(33, 150, 243, 0);
     transition: border var(--timing);
 }
 
 .form-mail-input-footer:focus {
+    background: #2F303A;
     border: 1px solid rgba(33, 150, 243, 0);
     transition: border var(--timing);
 }
@@ -1232,6 +1232,7 @@ section .button {
     width: 200px;
     height: 50px;
     background: #2196F3;
+    border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
